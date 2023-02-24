@@ -1,1 +1,16 @@
-<p>details works!</p>
+<h2 class="mb-3">Details for the Dish of Your Choice</h2>
+
+<div *ngIf="dish" class="row row-cols-md-2 row-cols-sm-1">
+    <div class="col">
+        <img src="{{ dish.image }}" class="card-img-top mb-3" alt="...">
+    </div>
+    <div class="col">
+        <h3>{{ dish.name }}</h3>
+        <p>{{ dish.description }}</p>
+        <h4>{{ dish.price }} €</h4>
+        <a routerLink="../../menu" class="btn btn-outline-dark me-3">Back</a>
+        <a *ngIf="dish.availability" routerLink="order/#" class="btn btn-outline-success my-3">Order</a>
+
+    </div>
+
+</div>

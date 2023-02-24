@@ -8,10 +8,11 @@
                 <img src="{{ dish.image }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{ dish.name }}</h5>
-                    <p class="card-text">{{ dish.description }}</p>
+                    <p *ngIf="dish.description" class="card-text">{{ dish.description }}</p>
+                    <p *ngIf="!dish.description" class="card-text">Just let our Chef surprise you!</p>
                     <h6 class="card-title text-end me-3 mb-5">{{ dish.price }} €</h6>
-                    <a href="#" class="btn btn-outline-warning me-3">Details</a>
-                    <a href="#" class="btn btn-outline-success">Order</a>
+                    <a *ngIf="dish.availability" routeLink="details/#" class="btn btn-outline-warning me-3">Details</a>
+                    <a *ngIf="dish.availability" routeLink="order/#" class="btn btn-outline-success">Order</a>
                 </div>
             </div>
         </div>

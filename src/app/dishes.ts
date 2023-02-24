@@ -10,11 +10,13 @@ export const dishes = [
         image: 'https://cdn.pixabay.com/photo/2016/05/17/09/27/bonggolre-1397735_960_720.jpg',
         description: 'Spaghetti with clams, it is very popular throughout Italy, especially its central regions, including Rome and further south in Campania (where it is part of traditional Neapolitan cuisine).',
         price: 24,
-        availability: true
+        availability: false
     },{
         name: 'Panna Cotta',
         image: 'https://cdn.pixabay.com/photo/2013/09/12/15/31/panna-cotta-181669__340.jpg',
-        description: 'Panna cotta (Italian for "cooked cream") is an Italian dessert of sweetened cream thickened with gelatin and molded. The cream may be aromatized with coffee, vanilla, or other flavorings.',
+/*         description: 'Panna cotta (Italian for "cooked cream") is an Italian dessert of sweetened cream thickened with gelatin and molded. The cream may be aromatized with coffee, vanilla, or other flavorings.',
+ */
+        description: "",
         price: 8,
         availability: true
     },{
@@ -32,7 +34,8 @@ export const dishes = [
     },{
         name: 'Minestrone',
         image: 'https://cdn.pixabay.com/photo/2020/01/18/00/48/soup-4774291__340.jpg',
-        description: 'Minestrone is a thick soup of Italian origin made with vegetables, often with the addition of pasta or rice, sometimes both. Common ingredients include beans, onions, celery, carrots, leaf vegetables, stock, parmesan cheese and tomatoes.',
+/*         description: 'Minestrone is a thick soup of Italian origin made with vegetables, often with the addition of pasta or rice, sometimes both. Common ingredients include beans, onions, celery, carrots, leaf vegetables, stock, parmesan cheese and tomatoes.', */
+        description: "",
         price: 16,
         availability: true
     },{

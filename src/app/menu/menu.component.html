@@ -13,6 +13,7 @@
                     <h6 class="card-title text-end me-3 mb-5">{{ dish.price }} €</h6>
                     <a *ngIf="dish.availability" routerLink="../details/{{dishId}}" class="btn btn-outline-warning me-3">Details</a>
                     <a *ngIf="dish.availability" routerLink="order/#" class="btn btn-outline-success">Order</a>
+                    <p *ngIf="!dish.availability" class="btn btn-outline-warning">This dish has been eaten up. Please choose a different one!</p>
                 </div>
             </div>
         </div>

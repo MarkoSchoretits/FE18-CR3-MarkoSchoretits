@@ -43,6 +43,6 @@ export const dishes = [
         image: 'https://cdn.pixabay.com/photo/2015/06/17/07/34/dessert-812050__340.jpg',
         description: 'Some food historians place the origins of cannoli in 827–1091 in Caltanissetta in Sicily, by the concubines of princes looking to capture their attention. This period marks the Arab rule of the island, known then as the Emirate of Sicily, giving rise to the theory that the etymology stemmed from the Arabic word qanawāt meaning \'tubes\' in reference to their tube-shaped shells.',
         price: 8,
-        availability: true
+        availability: false
     }
 ];

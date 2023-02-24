@@ -1,0 +1,21 @@
+.title-pic-pack {
+    position: relative;
+    text-align: center;
+    color: #eee;
+}
+
+.img {
+    width: 100%;
+}
+    
+.text-over-img {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: -3px -3px 7px white,
+    5px 5px 10px black;
+}
+h1 {
+    font-size: 3em;
+}

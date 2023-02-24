@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { dishes } from '../dishes';
 import { IDishes } from '../IDishes';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-details',
@@ -13,7 +14,14 @@ export class DetailsComponent {
 dish: IDishes = {} as IDishes;
 id: number = 0;
 
-constructor(private route: ActivatedRoute) { }
+constructor(
+  private route: ActivatedRoute,
+  private cartService: CartService) { }
+
+addToCart() {
+  window.alert('The dish of your choice has bin added to the order list.');
+  this.cartService.addToCart(this.dish);
+}
 
 ngOnInit(): void {
   this.route.params.subscribe((params: Params) => {

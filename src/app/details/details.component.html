@@ -9,7 +9,7 @@
         <p>{{ dish.description }}</p>
         <h4>{{ dish.price }} €</h4>
         <a routerLink="../../menu" class="btn btn-outline-dark me-3">Back</a>
-        <a *ngIf="dish.availability" routerLink="order/#" class="btn btn-outline-success my-3">Order</a>
+        <button (click)="addToCart()" class="btn btn-outline-success my-3">Order</button>
 
     </div>
 

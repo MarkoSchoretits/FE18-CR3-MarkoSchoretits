@@ -4,6 +4,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { DetailsComponent } from './details/details.component';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
+import { OrderComponent } from './order/order.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,9 @@ const routes: Routes = [
   },
   {
     path: "details/:dishId", component: DetailsComponent
+  },
+  {
+    path: "order", component: OrderComponent
   }
 ];
 

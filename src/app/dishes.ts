@@ -6,7 +6,7 @@ export const dishes = [
         price: 32,
         availability: true
     },{
-        name: 'Spagtetti alle Vongole',
+        name: 'Spaghetti alle Vongole',
         image: 'https://cdn.pixabay.com/photo/2016/05/17/09/27/bonggolre-1397735_960_720.jpg',
         description: 'Spaghetti with clams, it is very popular throughout Italy, especially its central regions, including Rome and further south in Campania (where it is part of traditional Neapolitan cuisine).',
         price: 24,

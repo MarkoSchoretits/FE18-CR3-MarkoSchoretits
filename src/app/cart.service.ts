@@ -1,9 +1,11 @@
+import { NgFor } from '@angular/common';
 import { Injectable } from '@angular/core';
 import { IDishes } from './IDishes'
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class CartService {
 
   items: IDishes[] = [];
@@ -20,4 +22,14 @@ export class CartService {
     this.items = [];
     return this.items;
   }
+  getTotal() {
+    var total=0;
+    for(let i=0; i<this.items.length; i++) {
+      let item = this.items[i];
+      let price = item.price;
+      total += price;
+    }
+    return total;
+  }  
 }
+

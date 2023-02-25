@@ -1,11 +1,13 @@
 
 <h3>Your Order</h3>
 
-
 <div class="cart-item" *ngFor="let item of items">
-
- <span>{{ item.name }} </span>
-
- <span>{{ item.price | currency }}</span>
-
+    <span>{{ item.name }} </span>
+    <span>{{ item.price }} €</span>
 </div>
+
+<p class="fw-bold">
+    Dishes: {{ subtotal }} € <br>
+    Service: {{ service }} € <br>
+    Total: {{ total }} €
+</p>

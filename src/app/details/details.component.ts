@@ -9,7 +9,7 @@ import { CartService } from '../cart.service';
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.css']
 })
-export class DetailsComponent {
+export class DetailsComponent implements OnInit {
 
 dish: IDishes = {} as IDishes;
 id: number = 0;

@@ -12,6 +12,7 @@ export class OrderComponent implements OnInit {
   total: number = 0;
   service: number = 0;
   subtotal: number = 0;
+  totalAfterDiscount: number = 0;
 
   constructor(private cartService: CartService) {}
 
@@ -20,5 +21,6 @@ export class OrderComponent implements OnInit {
     this.subtotal = this.cartService.getTotal();
     this.service = Math.floor(this.cartService.getTotal()/10);
     this.total = this.subtotal + this.service;
+    this.totalAfterDiscount = Math.floor(this.total * 0.85);
   }
 }

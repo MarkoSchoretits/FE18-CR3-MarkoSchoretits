@@ -9,5 +9,8 @@
 <p class="fw-bold">
     Dishes: {{ subtotal }} € <br>
     Service: {{ service }} € <br>
-    Total: {{ total }} €
+    Total: {{ total }} € <br>
+    <span *ngIf="total > 40">
+        After 15% Discount you pay: {{ totalAfterDiscount }} €
+    </span>
 </p>
